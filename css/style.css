@@ -2,7 +2,7 @@
 
 html,
 body,
-.view {
+.intro-header {
     height: 100%;
 }
 
@@ -17,9 +17,6 @@ body,
     background-color: #1C2331;
 }
 
-footer.page-footer {
-    background-color: #1C2331;
-}
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -29,9 +26,9 @@ footer.page-footer {
 
 /*Intro*/
 
-.view {
+.intro-header {
     background: url('../img/alpine-background.jpg')no-repeat center center fixed;
-        -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -86,8 +83,16 @@ footer.page-footer {
 .carousel-multi-item .carousel-indicators .active {
     background-color: #1C2331;
 }
-#section1 {
-    background-image: url("http://mdbootstrap.com/images/regular/nature/img%20(21).jpg");
+.parallax {
+    color: white;
+}
+#parallax1 {
+    background-image: url("../img/fishing-3.jpeg");
+    height: 400px;
+    margin-top: 50px;
+}
+#parallax2 {
+    background-image: url("../img/keyboard.jpg");
     height: 400px;
     margin-top: 50px;
 }
