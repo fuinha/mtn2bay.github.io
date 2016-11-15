@@ -5,7 +5,9 @@ body,
 .intro-header {
     height: 100%;
 }
-
+.min-height {
+    min-height: 550px;
+}
 
 /* Navigation*/
 
@@ -85,14 +87,44 @@ footer.page-footer {
 }
 .parallax {
     color: white;
+    height: 400px;
+    margin-top: 50px;
 }
 #parallax1 {
     background-image: url("../img/fishing-3.jpeg");
-    height: 400px;
-    margin-top: 50px;
 }
 #parallax2 {
+    background-image: url("../img/fishing-3.jpeg");
+}
+#parallax3 {
     background-image: url("../img/keyboard.jpg");
-    height: 400px;
-    margin-top: 50px;
+}
+/* PIE CHART STYLES */
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* SHOUL BE EQUAL - Like 200px */
+    height: 200px; /* SHOUL BE EQUAL - Like 200px */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    line-height: 200px; /* SHOUL BE EQUAL - Like 200px */
+    z-index: 2;
+    font-size: 2em;
+}
+
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: 1em;
 }

@@ -42,14 +42,17 @@
                 <a class="navbar-brand" href="#home">Mike Roy</a>
                 <!--Links-->
                 <ul class="nav navbar-nav smooth-scroll float-xs-right">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#examples">Examples</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#examples">Work</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -164,15 +167,63 @@
             </div>
         </section>
         <!--/Section: Examples of use-->
+
+
     </div>
 
-        <!--Section: Parallax-->
-        <section class="parallax" id="parallax1">
-            <div class="container flex-center">
-                <h1>Portfolio Examples</h1>
+    <!--Section: Parallax-->
+    <section class="parallax" id="parallax1">
+        <div class="container flex-center">
+            <h1>Skills</h1>
+        </div>
+    </section>
+    <!--/Section: Parallax-->
+
+    <div class="container">
+
+        <section id="skills">
+            <div class="row mt-2">
+   
+                <div class="col-sm-3 wow fadeInLeftBig text-xs-center">
+                    <span class="chart" data-percent="65">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>JQUERY</h4>
+                </div>
+                
+                <div class="col-sm-3 wow fadeInUpBig text-xs-center">
+                    <span class="chart" data-percent="85">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>CSS</h4>
+                </div>
+                
+                <div class="col-sm-3 wow fadeInUpBig text-xs-center">
+                    <span class="chart" data-percent="90">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>HTML</h4>
+                </div>
+
+                <div class="col-sm-3 wow fadeInRightBig text-xs-center">
+                    <span class="chart" data-percent="75">
+                        <span class="percent"></span>
+                    </span>
+                    <h4>Bootstrap</h4>
+                </div>
+            
             </div>
         </section>
-        <!--/Section: Parallax-->
+
+    </div>
+
+    <!--Section: Parallax-->
+    <section class="parallax" id="parallax2">
+        <div class="container flex-center">
+            <h1>Portfolio Examples</h1>
+        </div>
+    </section>
+    <!--/Section: Parallax-->
 
     <div class="container">
 
@@ -185,8 +236,8 @@
 
                     <!--Controls-->
                     <div class="controls-top">
-                        <a class="btn-floating btn-small" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                        <a class="btn-floating btn-small" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                        <a class="btn-floating btn-small" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left fa-lg"></i></a>
+                        <a class="btn-floating btn-small" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right fa-lg"></i></a>
                     </div>
                     <!--/.Controls-->
 
@@ -199,10 +250,10 @@
                     <!--/.Indicators-->
 
                     <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
+                    <div class="carousel-inner min-height" role="listbox">
 
                         <!--First slide-->
-                        <div class="carousel-item active">
+                        <div class="carousel-item active pt-1">
 
                             <div class="col-md-4">
                                 <div class="card">
@@ -243,7 +294,7 @@
                         <!--/.First slide-->
 
                         <!--Second slide-->
-                        <div class="carousel-item">
+                        <div class="carousel-item pt-1">
 
                             <div class="col-md-4">
                                 <div class="card">
@@ -285,7 +336,7 @@
                         <!--/.Second slide-->
 
                         <!--Third slide-->
-                        <div class="carousel-item">
+                        <div class="carousel-item pt-1">
 
                             <div class="col-md-4">
                                 <div class="card">
@@ -342,7 +393,7 @@
     <!--/Main container-->
 
     <!--Section: Parallax-->
-    <section class="parallax" id="parallax2">
+    <section class="parallax" id="parallax3">
         <div class="container text-xs-center">
             <h1>
                 <i class="fa fa-paper-plane"></i>
@@ -415,9 +466,32 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
+    <!-- Easy as Pie jQuery plugin -->
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+
     <!-- Animations init-->
     <script>
         new WOW().init();
+    </script>
+
+    <!-- Easy as Pie-->
+    <script type="text/javascript">
+        $(function() {
+            setTimeout(function(){
+                $('.chart').easyPieChart({
+                animate: 5000,
+                easing: 'easeOutBounce',
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                },
+                barColor: '#05D6AC', //FORCOLOR OF CHART
+                lineWidth: 10, //WIDTH OF STRIP OF SKILL CHART
+                size: 200, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
+                });
+            }, 3000);
+            
+
+        });
     </script>
 
 </body>
