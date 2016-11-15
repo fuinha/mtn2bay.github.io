@@ -8,7 +8,12 @@ body,
 .min-height {
     min-height: 550px;
 }
-
+a {
+    color: white;
+}
+a:hover {
+    color: #05D6AC;
+}
 /* Navigation*/
 
 .navbar {
@@ -78,7 +83,12 @@ body,
 footer.page-footer {
     background-color: #1C2331;
 }
-
+.round-border {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
 .carousel-multi-item .carousel-indicators li {
     background-color: #1C2331;
 }
@@ -109,20 +119,17 @@ footer.page-footer {
     margin-bottom: 20px;
     text-align: center;
 }
-
 .chart canvas {
     position: absolute;
     top: 0;
     left: 0;
 }
-
 .percent {
     display: inline-block;
     line-height: 200px; /* SHOUL BE EQUAL - Like 200px */
     z-index: 2;
     font-size: 2em;
 }
-
 .percent:after {
     content: '%';
     margin-left: 0.1em;
