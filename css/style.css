@@ -8,8 +8,11 @@ body,
 .min-height {
     min-height: 550px;
 }
-a {
+#parallax3 a {
     color: white;
+}
+#parallax3 a:hover {
+    color: #05D6AC;
 }
 a:hover {
     color: #05D6AC;
