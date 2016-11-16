@@ -8,9 +8,6 @@ body,
 h2 {
     color: #05D6AC !important;
 }
-.min-height {
-    min-height: 550px;
-}
 #parallax3 a {
     color: white;
 }
@@ -67,7 +64,9 @@ a:hover {
         text-align: center;
     }
 }
-
+.carousel-indicators {
+    bottom: 0 !important;
+}
 
 /*Colors*/
 
