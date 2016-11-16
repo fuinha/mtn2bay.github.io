@@ -184,28 +184,28 @@
         <section id="skills">
             <div class="row mt-2">
    
-                <div class="col-sm-3 wow fadeInLeftBig text-xs-center">
+                <div class="col-md-3 wow fadeInLeftBig text-xs-center">
                     <span class="chart" data-percent="65">
                         <span class="percent"></span>
                     </span>
                     <h4>JQUERY</h4>
                 </div>
                 
-                <div class="col-sm-3 wow fadeInUpBig text-xs-center">
+                <div class="col-md-3 wow fadeInUpBig text-xs-center">
                     <span class="chart" data-percent="85">
                         <span class="percent"></span>
                     </span>
                     <h4>CSS</h4>
                 </div>
                 
-                <div class="col-sm-3 wow fadeInUpBig text-xs-center">
+                <div class="col-md-3 wow fadeInUpBig text-xs-center">
                     <span class="chart" data-percent="90">
                         <span class="percent"></span>
                     </span>
                     <h4>HTML</h4>
                 </div>
 
-                <div class="col-sm-3 wow fadeInRightBig text-xs-center">
+                <div class="col-md-3 wow fadeInRightBig text-xs-center">
                     <span class="chart" data-percent="75">
                         <span class="percent"></span>
                     </span>
@@ -434,7 +434,7 @@
             <div class="container">
               <div class="row py-3">
                
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div>
                         <h4>Mike Roy</h4>
                         <h4>Pownal, ME</h4>
@@ -442,12 +442,8 @@
                     </div>
                 </div>
                 
-                <div class="col-sm-4">
-
-                </div>
-                
-                <div class="col-sm-4">
-
+                <div class="col-sm-6">
+                    <div id="map-container" class="z-depth-1 wow fadeInUp" style="height: 300px"></div>
                 </div>
                 
               </div>
@@ -510,6 +506,37 @@
 
         });
     </script>
+
+    <!--Google Maps-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHn16vpqktMIXQH8ZbmemlPdTDjr4wJdY"></script>
+
+    <script>
+        function init_map() {
+
+            var var_location = new google.maps.LatLng(43.873032, -70.144720);
+
+            var var_mapoptions = {
+                center: var_location,
+                mapTypeId: 'hybrid',
+                zoom: 11
+            };
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "Pownal"
+            });
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var_marker.setMap(var_map);
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+
 
 </body>
 

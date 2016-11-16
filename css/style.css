@@ -106,6 +106,9 @@ footer.page-footer {
 .carousel-multi-item .carousel-indicators li {
     background-color: #4B515D;
 }
+.carousel-multi-item .carousel-indicators li:hover {
+    background-color: #05D6AC;
+}
 .carousel-multi-item .carousel-indicators .active {
     background-color: #4B515D;
 }
