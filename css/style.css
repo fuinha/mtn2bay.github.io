@@ -78,11 +78,6 @@ a:hover {
     background-color: #05D6AC !important;
     color: #3E4551 !important;
 }
-
-.btn-ptc:focus {
-    background-color: #05D6AC !important;
-    color: #3E4551 !important;
-}
 .fa-lg {
     color: #4B515D !important;
 }
@@ -92,8 +87,7 @@ a:hover {
 .fa-lg:focus {
     color: #05D6AC !important;
 }
-#examples hr,
-#parallax3 hr {
+.hr-teal {
     width: 10%;
     border-width: 4px;
     border-radius: 20%;

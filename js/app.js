@@ -1,7 +1,8 @@
 $(".nav-link").click(function (){
+	event.preventDefault();
 	var target = $(this).attr("href");
-	console.log(target);
+	
     $("html, body").animate({
-        scrollTop: $(target).offset().top -50
-    }, 2000);
+        scrollTop: $(target).offset().top -100
+    }, 2500);
 });
