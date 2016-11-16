@@ -92,6 +92,16 @@ a:hover {
 .fa-lg:focus {
     color: #05D6AC !important;
 }
+#examples hr,
+#parallax3 hr {
+    width: 10%;
+    border-width: 4px;
+    border-radius: 20%;
+    border-color: #05D6AC;
+}
+.fa-paper-plane {
+    color: #05D6AC;
+}
 footer.page-footer {
     background-color: #3E4551;
 }
@@ -109,7 +119,7 @@ footer.page-footer {
     background-color: #05D6AC;
 }
 .carousel-multi-item .carousel-indicators .active {
-    background-color: #4B515D;
+    background-color: #3E4551;
 }
 .parallax {
     color: white;
