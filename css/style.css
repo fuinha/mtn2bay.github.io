@@ -5,6 +5,9 @@ body,
 .intro-header {
     height: 100%;
 }
+h2 {
+    color: #05D6AC !important;
+}
 .min-height {
     min-height: 550px;
 }
@@ -15,7 +18,7 @@ body,
     color: #05D6AC;
 }
 a:hover {
-    color: #05D6AC;
+    color: #05D6AC !important;
 }
 /* Navigation*/
 
@@ -24,13 +27,13 @@ a:hover {
 }
 
 .top-nav-collapse {
-    background-color: #1C2331;
+    background-color: #3E4551;
 }
 
 
 @media only screen and (max-width: 768px) {
     .navbar {
-        background-color: #1C2331;
+        background-color: #3E4551;
     }
 }
 
@@ -65,26 +68,33 @@ a:hover {
     }
 }
 
-.fa-check {
-    color: green;
-}
 
 /*Colors*/
 
 .btn-ptc {
-  background-color: #45526E !important;
+    background-color: #3E4551 !important;
 }
 
 .btn-ptc:hover {
-  background-color: #59698d !important;
+    background-color: #05D6AC !important;
+    color: #3E4551 !important;
 }
 
 .btn-ptc:focus {
-  background-color: #59698d !important;
+    background-color: #05D6AC !important;
+    color: #3E4551 !important;
 }
-
+.fa-lg {
+    color: #4B515D !important;
+}
+.fa-lg:hover {
+    color: #05D6AC !important;
+}
+.fa-lg:focus {
+    color: #05D6AC !important;
+}
 footer.page-footer {
-    background-color: #1C2331;
+    background-color: #3E4551;
 }
 .round-border {
     width: 50px;
@@ -92,24 +102,27 @@ footer.page-footer {
     border-radius: 50%;
     background-color: black;
 }
+
 .carousel-multi-item .carousel-indicators li {
-    background-color: #1C2331;
+    background-color: #4B515D;
 }
 .carousel-multi-item .carousel-indicators .active {
-    background-color: #1C2331;
+    background-color: #4B515D;
 }
 .parallax {
     color: white;
-    height: 400px;
     margin-top: 50px;
 }
 #parallax1 {
+    height: 250px;
     background-image: url("../img/fishing-3.jpeg");
 }
 #parallax2 {
+    height: 250px;
     background-image: url("../img/fishing-3.jpeg");
 }
 #parallax3 {
+    height: 400px;
     background-image: url("../img/keyboard.jpg");
 }
 /* PIE CHART STYLES */
