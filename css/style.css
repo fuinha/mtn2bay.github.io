@@ -7,18 +7,7 @@ body,
 .intro-header {
     height: 100%;
 }
-h2 {
-    color: #05D6AC !important;
-}
-#parallax3 a {
-    color: white;
-}
-#parallax3 a:hover {
-    color: #05D6AC;
-}
-a:hover {
-    color: #05D6AC !important;
-}
+
 /* Navigation*/
 
 .navbar {
@@ -71,7 +60,21 @@ a:hover {
 }
 
 /*Colors*/
-
+h2 {
+    color: #05D6AC !important;
+}
+#parallax3 a {
+    color: white;
+}
+#parallax3 a:hover {
+    color: #05D6AC;
+}
+a:hover {
+    color: #05D6AC !important;
+}
+#about a {
+    color: #373a3c;
+}
 .btn-ptc {
     background-color: #3E4551 !important;
 }
