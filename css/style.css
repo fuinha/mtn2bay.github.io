@@ -124,14 +124,26 @@ footer.page-footer {
 #parallax1 {
     height: 250px;
     background-image: url("../img/fishing-3.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #parallax2 {
     height: 250px;
     background-image: url("../img/alpine-climbing.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 #parallax3 {
     height: 400px;
     background-image: url("../img/keyboard.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 /* PIE CHART STYLES */
 .chart {
