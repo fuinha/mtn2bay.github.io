@@ -52,32 +52,3 @@ $(function init_map() {
 
 	google.maps.event.addDomListener(window, 'load', init_map);
 });
-
-// Cycle carousels when in view
-$('#about').viewportChecker({
-    offset: 200,
-    callbackFunction: function(elem){
-        
-    	$('#carousel-profile').carousel({
-		  	interval:5000,
-		  	pause:false,
-		  	cycle:true,
-		  	wrap:true
-		});
-        console.log("play");
-        
-    }
-});
-
-$('#examples').viewportChecker({
-    offset: 200,
-    callbackFunction: function(elem){
-        setTimeout(function(){
-            $('#multi-item-example').carousel({
-			  	interval:5000
-			});
-            $('#multi-item-example').carousel('cycle'); // remove pause
-            console.log("play");
-        },500);
-    }
-});
