@@ -58,7 +58,9 @@ body,
 .carousel-indicators {
     bottom: 0 !important;
 }
-
+.inline {
+    display: inline-block;
+}
 /*Colors*/
 h2 {
     color: #05D6AC !important;
@@ -83,13 +85,13 @@ a:hover {
     background-color: #05D6AC !important;
     color: #3E4551 !important;
 }
-.fa-lg {
+.icon-grey {
     color: #4B515D !important;
 }
-.fa-lg:hover {
+.icon-grey:hover {
     color: #05D6AC !important;
 }
-.fa-lg:focus {
+.icon-grey:focus {
     color: #05D6AC !important;
 }
 .hr-teal {
@@ -129,7 +131,7 @@ footer.page-footer {
 }
 #parallax1 {
     height: 250px;
-    background-image: url("../img/fishing-3.jpeg");
+    background-image: url("../img/fishing-3.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,12 +1,14 @@
-// Velocity plugin for nav scroll
+// init animations
+new WOW().init();
+
+// nav scroll
 $(".nav-link").on("click", function (){
 	event.preventDefault();
 	var target = $(this).attr("href");
 
-	$(target).velocity("scroll", { 
-		duration: 3000,
-		offset: -100,
-	});
+	$("html, body").animate({
+        scrollTop: $(target).offset().top -100
+    }, 2000, 'swing');
 });
 
 // Easy as Pie plugin - load when in view
