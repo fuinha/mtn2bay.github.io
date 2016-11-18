@@ -177,36 +177,71 @@
     <div class="container">
 
         <section id="skills">
-            <div class="row mt-2">
-   
-                <div class="col-lg-3 col-sm-6 wow fadeIn text-xs-center">
-                    <span class="chart" data-percent="65">
-                        <span class="percent"></span>
-                    </span>
-                    <h4>JQUERY</h4>
-                </div>
-                
-                <div class="col-lg-3 col-sm-6 wow fadeIn text-xs-center">
-                    <span class="chart" data-percent="85">
-                        <span class="percent"></span>
-                    </span>
-                    <h4>CSS</h4>
-                </div>
-                
-                <div class="col-lg-3 col-sm-6 wow fadeIn text-xs-center">
-                    <span class="chart" data-percent="90">
-                        <span class="percent"></span>
-                    </span>
-                    <h4>HTML</h4>
-                </div>
+            <div class="row mt-3">
+                <div class="col-xs-8">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeIn text-xs-center">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Design and Media</li>
+                                <li class="list-group-item">Responsive Designs</li>
+                                <li class="list-group-item">Bootstrap</li>
+                                <li class="list-group-item">Mobile First</li>
+                                <li class="list-group-item">SEO</li>
+                                <li class="list-group-item">Adobe Creative Suite</li>
+                                <li class="list-group-item">Wireframing</li>
+                                <li class="list-group-item">Audio / Video</li>
+                            </ul>
 
-                <div class="col-lg-3 col-sm-6 wow fadeIn text-xs-center">
-                    <span class="chart" data-percent="75">
-                        <span class="percent"></span>
-                    </span>
-                    <h4>Bootstrap</h4>
+                        </div>
+                        <div class="col-md-6 wow fadeIn text-xs-center">
+                            <ul class="list-group">
+                                <li class="list-group-item active">Engineering</li>
+                                <li class="list-group-item">HTML</li>
+                                <li class="list-group-item">CSS</li>
+                                <li class="list-group-item">jQuery</li>
+                                <li class="list-group-item">AJAX</li>
+                                <li class="list-group-item">REST APIs</li>
+                                <li class="list-group-item">git</li>
+                                <li class="list-group-item">Wordpress</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            
+                
+                <div class="col-xs-4">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeIn text-xs-center">
+                            <span class="chart" data-percent="90">
+                                <span class="percent"></span>
+                            </span>
+                            <p>HTML</p>
+                        </div>
+                        <div class="col-md-6 wow fadeIn text-xs-center">
+                            <span class="chart" data-percent="75">
+                                <span class="percent"></span>
+                            </span>
+                            <p>JQUERY</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 wow fadeIn text-xs-center">
+                            <span class="chart" data-percent="85">
+                                <span class="percent"></span>
+                            </span>
+                            <p>CSS</p>
+                        </div>
+                        <div class="col-md-6 wow fadeIn text-xs-center">
+
+                            <span class="chart" data-percent="70">
+                                <span class="percent"></span>
+                            </span>
+                            <p>APIs</p>
+                        </div> 
+                    </div>
+                 
+                </div>
+                
+                
             </div>
         </section>
 
@@ -534,8 +569,8 @@
                     $(this.el).find('.percent').text(Math.round(percent));
                 },
                 barColor: '#05D6AC', //FORCOLOR OF CHART
-                lineWidth: 10, //WIDTH OF STRIP OF SKILL CHART
-                size: 200, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
+                lineWidth: 5, //WIDTH OF STRIP OF SKILL CHART
+                size: 100, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
                 });
             }, 3000);
             

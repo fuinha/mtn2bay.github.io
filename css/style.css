@@ -98,6 +98,10 @@ a:hover {
     border-radius: 20%;
     border-color: #05D6AC;
 }
+#skills .active {
+    background-color: #3E4551 !important;
+    border-color: #3E4551 !important;
+}
 .fa-paper-plane {
     color: #05D6AC;
 }
@@ -152,11 +156,10 @@ footer.page-footer {
 .chart {
     position: relative;
     display: inline-block;
-    width: 200px; /* SHOUL BE EQUAL - Like 200px */
-    height: 200px; /* SHOUL BE EQUAL - Like 200px */
-    margin-top: 30px;
-    margin-bottom: 20px;
+    width: 100px; /* SHOUL BE EQUAL - Like 200px */
+    height: 100px; /* SHOUL BE EQUAL - Like 200px */
     text-align: center;
+    margin-top: 30px;
 }
 .chart canvas {
     position: absolute;
@@ -165,12 +168,12 @@ footer.page-footer {
 }
 .percent {
     display: inline-block;
-    line-height: 200px; /* SHOUL BE EQUAL - Like 200px */
+    line-height: 100px; /* SHOUL BE EQUAL - Like 200px */
     z-index: 2;
-    font-size: 2em;
+    font-size: 1em;
 }
 .percent:after {
     content: '%';
-    margin-left: 0.1em;
+    margin-left: 0.2em;
     font-size: 1em;
 }
