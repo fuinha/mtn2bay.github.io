@@ -29,7 +29,7 @@ $('.skill-pie').viewportChecker({
     }
 });
 
-$(document).on('pageinit', function(event){
+$(document).ready(function(){
 	//Example swipe functionality
 	$('#examples').on('swipeleft',function(){
 		$('#multi-item-example').carousel('next');
