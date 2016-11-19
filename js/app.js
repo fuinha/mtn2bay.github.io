@@ -8,16 +8,16 @@ $(".nav-link").on("click", function (){
 
 	$("html, body").animate({
         scrollTop: $(target).offset().top -100
-    }, 2000, 'swing');
+    }, 1000, 'swing');
 });
 
 // Easy as Pie plugin - load when in view
 $('.skill-pie').viewportChecker({
-    offset: 200,                  // wait for the first 200 pixel of the element 
+    offset: 0,                  // wait for the first 200 pixel of the element 
                                       //to enter in the viewport
     callbackFunction: function(elem){
         $('.chart').easyPieChart({
-	        animate: 6000,
+	        animate: 4000,
 	        easing: 'easeInOutCubic',
 	        onStep: function (from, to, percent) {
 	            $(this.el).find('.percent').text(Math.round(percent));

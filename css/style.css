@@ -34,7 +34,7 @@ body,
     .mobile-pad-right {
         padding-right: 10px !important;
     }
-    .mobile-pad-0 {
+    .mobile-pad-all {
         padding: 1px;
     }
     .full-width-mobile {
@@ -196,6 +196,7 @@ footer.page-footer {
     line-height: 100px; /* SHOUL BE EQUAL - Like 200px */
     z-index: 2;
     font-size: 1em;
+    padding-left: 3px;
 }
 .percent:after {
     content: '%';
