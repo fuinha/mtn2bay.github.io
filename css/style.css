@@ -24,6 +24,25 @@ body,
         background-color: #3E4551;
     }
 }
+@media (max-width: 768px) {
+    .full-bg-img,
+    .view {
+        height: auto;
+        position: relative;
+    }
+    .mobile-fix {
+        background-attachment: scroll !important;
+    }
+    .mob-op {
+        opacity: .7;
+    }
+}
+@media (max-width: 992px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+}
 
 /*Intro*/
 
@@ -34,14 +53,15 @@ body,
     -o-background-size: cover;
     background-size: cover;
 }
-
-@media (max-width: 768px) {
-    .full-bg-img,
-    .view {
-        height: auto;
-        position: relative;
-    }
+.para-content {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
 }
+
 
 .description {
     padding-top: 25%;
@@ -49,12 +69,7 @@ body,
     color: #fff
 }
 
-@media (max-width: 992px) {
-    .description {
-        padding-top: 7rem;
-        text-align: center;
-    }
-}
+
 .carousel-indicators {
     bottom: 0 !important;
 }
