@@ -16,18 +16,16 @@ $('.skill-pie').viewportChecker({
     offset: 200,                  // wait for the first 200 pixel of the element 
                                       //to enter in the viewport
     callbackFunction: function(elem){
-        setTimeout(function(){
-            $('.chart').easyPieChart({
-	        animate: 5000,
-	        easing: 'easeOutBounce',
-	        onStep: function (from, to, percent) {
-	            $(this.el).find('.percent').text(Math.round(percent));
-	        },
-	        barColor: '#05D6AC', //FORCOLOR OF CHART
-	        lineWidth: 5, //WIDTH OF STRIP OF SKILL CHART
-	        size: 100, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
-	        });
-        },500);
+        $('.chart').easyPieChart({
+        animate: 3000,
+        easing: 'easeOutBounce',
+        onStep: function (from, to, percent) {
+            $(this.el).find('.percent').text(Math.round(percent));
+        },
+        barColor: '#05D6AC', //FORCOLOR OF CHART
+        lineWidth: 5, //WIDTH OF STRIP OF SKILL CHART
+        size: 100, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
+        });
     }
 });
 
