@@ -29,6 +29,17 @@ $('.skill-pie').viewportChecker({
     }
 });
 
+$(document).on('pageinit', function(event){
+	//Example swipe functionality
+	$('#examples').on('swipeleft',function(){
+		$('#multi-item-example').carousel('next');
+	});
+	$('#examples').on('swiperight',function(){
+		$('#multi-item-example').carousel('prev');
+	});
+
+});
+
 // Init Google Maps
 $(function init_map() {
 

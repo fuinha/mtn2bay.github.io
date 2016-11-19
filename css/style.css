@@ -25,18 +25,25 @@ body,
     }
 }
 @media (max-width: 768px) {
-    .full-bg-img,
-    .view {
-        height: auto;
-        position: relative;
-    }
     .mobile-fix {
         background-attachment: scroll !important;
     }
     .mob-op {
         opacity: .7;
     }
-}
+    .mobile-pad-right {
+        padding-right: 10px !important;
+    }
+    .mobile-pad-0 {
+        padding: 5px;
+    }
+    .full-width-mobile {
+        margin: 0;
+        width: 100%;
+    }
+    .card {
+        
+    }
 @media (max-width: 992px) {
     .description {
         padding-top: 7rem;
@@ -76,6 +83,7 @@ body,
 .inline {
     display: inline-block;
 }
+
 /*Colors*/
 h2 {
     color: #05D6AC !important;
