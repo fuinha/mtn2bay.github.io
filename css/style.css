@@ -7,37 +7,6 @@ body,
     height: 100%;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 1024px) {
-    .navbar {
-        background-color: #3E4551;
-    }
-    .description {
-        padding-top: 7rem;
-        text-align: center;
-    }
-    .mobile-fix {
-        background-attachment: scroll !important;
-        background-position: 0 25%;
-    }
-    .mob-op {
-        opacity: .7;
-    }
-    .mobile-pad-right {
-        padding-right: 10px !important;
-    }
-    .mobile-pad-all {
-        padding: 1px;
-    }
-    .full-width-mobile {
-        margin: 0;
-        width: 100%;
-    }
-    .card {
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.16),0 1px 1px 0 rgba(0,0,0,.12);
-    }
-}
-
 /* Navigation */
 .navbar {
     background-color: transparent;
@@ -201,4 +170,35 @@ footer.page-footer {
     content: '%';
     margin-left: 0.2em;
     font-size: 1em;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        background-color: #3E4551;
+    }
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+    .mobile-fix {
+        background-attachment: scroll !important;
+        background-position: 0 25%;
+    }
+    .mob-op {
+        opacity: .7;
+    }
+    .mobile-pad-right {
+        padding-right: 10px !important;
+    }
+    .mobile-pad-all {
+        padding: 1px;
+    }
+    .full-width-mobile {
+        margin: 0;
+        width: 100%;
+    }
+    .card {
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.16),0 1px 1px 0 rgba(0,0,0,.12);
+    }
 }
