@@ -5,11 +5,11 @@ new WOW().init();
 $('.no-waves').removeClass("waves-effect");
 $('.no-waves').removeClass("waves-light");
 
-// nav scroll
+// Nav scroll
 $(".nav-link").on("click", function (){
 	event.preventDefault();
 	var target = $(this).attr("href");
-	
+
 	if (target == "#home") {
 		$("html, body").animate({
 	        scrollTop: $('body').offset().top
@@ -48,12 +48,12 @@ $('#carousel-profile').on('swiperight',function(){
 	$('#carousel-profile').carousel('prev');
 });
 
-//Example swipe functionality
+//Example Work swipe functionality
 $('#examples').on('swipeleft',function(){
-	$('#multi-item-example').carousel('next');
+	$('#work-carousel').carousel('next');
 });
 $('#examples').on('swiperight',function(){
-	$('#multi-item-example').carousel('prev');
+	$('#work-carousel').carousel('prev');
 });
 
 

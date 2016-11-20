@@ -7,17 +7,7 @@ body,
     height: 100%;
 }
 
-/* Navigation */
-
-.navbar {
-    background-color: transparent;
-    border-radius: 0;
-}
-
-.top-nav-collapse {
-    background-color: #3E4551;
-}
-
+/* Media Queries */
 @media only screen and (max-width: 1024px) {
     .navbar {
         background-color: #3E4551;
@@ -48,8 +38,46 @@ body,
     }
 }
 
-/* Intro */
+/* Navigation */
+.navbar {
+    background-color: transparent;
+    border-radius: 0;
+}
+.top-nav-collapse {
+    background-color: #3E4551;
+}
 
+/* Parallax */
+.parallax {
+    color: white;
+    margin-top: 50px;
+}
+#parallax1 {
+    height: 250px;
+    background-image: url("../img/fishing-3.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#parallax2 {
+    height: 250px;
+    background-image: url("../img/alpine-climbing.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#parallax3 {
+    height: 400px;
+    background-image: url("../img/keyboard.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Intro */
 .intro-header {
     background: url('../img/alpine-background.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -65,13 +93,11 @@ body,
     left: 0;
     margin-top: 50px;
 }
-
 .description {
     padding-top: 25%;
     padding-bottom: 3rem;
     color: #fff
 }
-
 .carousel-indicators {
     bottom: 0 !important;
 }
@@ -106,7 +132,6 @@ a:hover {
 .btn-ptc {
     background-color: #3E4551 !important;
 }
-
 .btn-ptc:hover {
     background-color: #05D6AC !important;
     color: #3E4551 !important;
@@ -141,7 +166,6 @@ footer.page-footer {
     border-radius: 50%;
     background-color: black;
 }
-
 .carousel-multi-item .carousel-indicators li {
     background-color: #4B515D;
 }
@@ -150,34 +174,6 @@ footer.page-footer {
 }
 .carousel-multi-item .carousel-indicators .active {
     background-color: #3E4551;
-}
-.parallax {
-    color: white;
-    margin-top: 50px;
-}
-#parallax1 {
-    height: 250px;
-    background-image: url("../img/fishing-3.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#parallax2 {
-    height: 250px;
-    background-image: url("../img/alpine-climbing.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#parallax3 {
-    height: 400px;
-    background-image: url("../img/keyboard.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 /* Pie Chart */
