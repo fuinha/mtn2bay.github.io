@@ -12,7 +12,7 @@ $(".nav-link").on("click", function (){
 
 	$("html, body").animate({
         scrollTop: $(target).offset().top -100
-    }, 1000, 'swing');
+    }, 1500, 'easeInOutSine');
 });
 
 // Easy as Pie plugin loaded using viewportChecker
