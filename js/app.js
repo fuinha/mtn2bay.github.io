@@ -1,5 +1,9 @@
-// init animations
+// Init animations
 new WOW().init();
+
+// Remove mdb waves effect
+$('.no-waves').removeClass("waves-effect");
+$('.no-waves').removeClass("waves-light");
 
 // nav scroll
 $(".nav-link").on("click", function (){
@@ -11,7 +15,7 @@ $(".nav-link").on("click", function (){
     }, 1000, 'swing');
 });
 
-// Easy as Pie plugin - load when in view
+// Easy as Pie plugin loaded using viewportChecker
 $('.skill-pie').viewportChecker({
     offset: 0,                  // wait for the first 200 pixel of the element 
                                       //to enter in the viewport
@@ -29,16 +33,14 @@ $('.skill-pie').viewportChecker({
     }
 });
 
-$(document).ready(function(){
-	//Example swipe functionality
-	$('#examples').on('swipeleft',function(){
-		$('#multi-item-example').carousel('next');
-	});
-	$('#examples').on('swiperight',function(){
-		$('#multi-item-example').carousel('prev');
-	});
-
+//Example swipe functionality
+$('#examples').on('swipeleft',function(){
+	$('#multi-item-example').carousel('next');
 });
+$('#examples').on('swiperight',function(){
+	$('#multi-item-example').carousel('prev');
+});
+
 
 // Init Google Maps
 $(function init_map() {
