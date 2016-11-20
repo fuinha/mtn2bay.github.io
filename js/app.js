@@ -9,10 +9,17 @@ $('.no-waves').removeClass("waves-light");
 $(".nav-link").on("click", function (){
 	event.preventDefault();
 	var target = $(this).attr("href");
-
-	$("html, body").animate({
-        scrollTop: $(target).offset().top -100
-    }, 1500, 'easeInOutSine');
+	
+	if (target == "#home") {
+		$("html, body").animate({
+	        scrollTop: $('body').offset().top
+	    }, 1500, 'easeInOutSine');
+	} else {
+		$("html, body").animate({
+	        scrollTop: $(target).offset().top -100
+	    }, 1500, 'easeInOutSine');
+	};
+	
 });
 
 // Easy as Pie plugin loaded using viewportChecker
@@ -33,6 +40,14 @@ $('.skill-pie').viewportChecker({
     }
 });
 
+// Profile img swipe functionality
+$('#carousel-profile').on('swipeleft',function(){
+	$('#carousel-profile').carousel('next');
+});
+$('#carousel-profile').on('swiperight',function(){
+	$('#carousel-profile').carousel('prev');
+});
+
 //Example swipe functionality
 $('#examples').on('swipeleft',function(){
 	$('#multi-item-example').carousel('next');
@@ -40,6 +55,7 @@ $('#examples').on('swipeleft',function(){
 $('#examples').on('swiperight',function(){
 	$('#multi-item-example').carousel('prev');
 });
+
 
 
 // Init Google Maps
