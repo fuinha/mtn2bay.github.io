@@ -56,8 +56,6 @@ $('#examples').on('swiperight',function(){
 	$('#work-carousel').carousel('prev');
 });
 
-
-
 // Init Google Maps
 $(function init_map() {
 

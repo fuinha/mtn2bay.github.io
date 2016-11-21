@@ -1,3 +1,4 @@
+/* Global */
 body {
     position: relative;
 }
@@ -5,6 +6,9 @@ html,
 body,
 .intro-header {
     height: 100%;
+}
+.inline {
+    display: inline-block;
 }
 
 /* Navigation */
@@ -23,7 +27,7 @@ body,
 }
 #parallax1 {
     height: 250px;
-    background-image: url("../img/fishing-3.jpg");
+    background-image: url("../img/bg-img/cribstone.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -31,7 +35,7 @@ body,
 }
 #parallax2 {
     height: 250px;
-    background-image: url("../img/alpine-climbing.jpg");
+    background-image: url("../img/bg-img/chic-chocs.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -45,15 +49,6 @@ body,
     -o-background-size: cover;
     background-size: cover;
 }
-
-/* Intro */
-.intro-header {
-    background: url('../img/alpine-background.jpg')no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 .para-content {
     z-index: 2;
     position: absolute;
@@ -62,16 +57,24 @@ body,
     left: 0;
     margin-top: 50px;
 }
+
+/* Intro */
+.intro-header {
+    background: url('../img/bg-img/nez-perce.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .description {
     padding-top: 25%;
     padding-bottom: 3rem;
     color: #fff
 }
+
+/* Examples */
 .carousel-indicators {
     bottom: 0 !important;
-}
-.inline {
-    display: inline-block;
 }
 .card-over {
     width: 100%;
@@ -183,10 +186,10 @@ footer.page-footer {
     }
     .mobile-fix {
         background-attachment: scroll !important;
-        background-position: 0 25%;
+        background-position: center center;
     }
     .mob-op {
-        opacity: .7;
+        opacity: .8;
     }
     .mobile-pad-right {
         padding-right: 10px !important;
