@@ -85,6 +85,11 @@ body,
     font-size: 1.2em;
 }
 
+/* Footer */
+.footer-copyright {
+    font-size: .8em;
+}
+
 /* Colors */
 h2 {
     color: #05D6AC !important;
