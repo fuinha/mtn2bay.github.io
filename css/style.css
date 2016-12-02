@@ -84,6 +84,9 @@ body,
     font-weight: 200;
     font-size: 1.2em;
 }
+.card-block {
+    border-top: 1px solid #F0F0F0;
+}
 
 /* Footer */
 .footer-copyright {
