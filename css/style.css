@@ -110,6 +110,7 @@ a:hover {
     color: #373a3c;
 }
 .btn-ptc {
+    margin: 0 !important;
     background-color: #3E4551 !important;
 }
 .btn-ptc:hover {
