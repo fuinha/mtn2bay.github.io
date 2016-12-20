@@ -22,6 +22,10 @@ $(".nav-link").on("click", function (){
 	
 });
 
+$(".modalToggle").on("click", function (){
+	document.getElementById('iframeid').src += '';
+});
+
 // Easy as Pie plugin loaded using viewportChecker
 $('.skill-pie').viewportChecker({
     offset: 0,                  // wait for the first 200 pixel of the element 

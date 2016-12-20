@@ -183,6 +183,10 @@ footer.page-footer {
     margin-left: 0.2em;
     font-size: 1em;
 }
+#myModal {
+    margin: 0 auto;
+    width: 550px;
+}
 
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
