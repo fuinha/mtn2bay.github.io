@@ -183,7 +183,7 @@ footer.page-footer {
     margin-left: 0.2em;
     font-size: 1em;
 }
-#myModal {
+.modal-body {
     margin: 0 auto;
     max-width: 90%;
     width: 550px;
