@@ -185,14 +185,12 @@ footer.page-footer {
 }
 .modal-body {
     margin: 0 auto;
-    max-width: 90%;
-    width: 550px;
+    width: 100%;
 }
 #iframeid {
     height: 300px;
     max-height: 100%;
-    width: 500px;
-    max-width: 100%;
+    width: 100%;
 }
 /* Media Queries */
 @media only screen and (max-width: 1024px) {
