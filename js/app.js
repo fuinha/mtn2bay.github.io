@@ -19,7 +19,7 @@ $(".nav-link").on("click", function (){
 	        scrollTop: $(target).offset().top -100
 	    }, 1500, 'easeInOutSine');
 	};
-	
+
 });
 
 $(".modalToggle").on("click", function (){
@@ -28,7 +28,7 @@ $(".modalToggle").on("click", function (){
 
 // Easy as Pie plugin loaded using viewportChecker
 $('.skill-pie').viewportChecker({
-    offset: 0,                  // wait for the first 200 pixel of the element 
+    offset: 0,                  // wait for the first 200 pixel of the element
                                       //to enter in the viewport
     callbackFunction: function(elem){
         $('.chart').easyPieChart({
@@ -39,7 +39,7 @@ $('.skill-pie').viewportChecker({
 	        },
 	        barColor: '#05D6AC', //FORCOLOR OF CHART
 	        lineWidth: 5, //WIDTH OF STRIP OF SKILL CHART
-	        size: 100, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px 
+	        size: 100, //WIDTH - HEIGHT OF SKILL CHART(SHOULD BE IN SQUARE) -  SHOUL BE EQUAL - Like 200px
         });
     }
 });
